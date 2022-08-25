@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  font-size: 10px;
+  font-family: Agency FB;
+  background-color: #09A2F9; }
+  header img {
+    display: flex;
+    width: 100%;
+    height: 60px; }
+  header nav ul {
+    display: flex;
+    column-gap: 5px;
+    font-weight: bold; }
+    header nav ul li a {
+      text-decoration: none;
+      color: #ffffff; }
+    header nav ul li a:hover {
+      color: #FFE400; }
+
+.boton button {
+  height: 33px;
+  width: 100px;
+  background-color: #FFE400;
+  color: #ffffff;
+  font-family: Agency FB;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  align-items: center; }
+
+.boton button:hover {
+  background-color: #09A2F9;
+  color: #FFE400;
+  border: 3px solid #FFE400;
+  border-radius: 2px; }
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "principal principal principal" "promocion promocion promocion" "promocion2 promocion2 promocion2" "card card card" "equipo equipo equipo" "clase clase clase" "contacto contacto contacto";
+  justify-items: center;
+  align-items: center; }
+  main .principal {
+    width: 100%;
+    font-family: Agency FB;
+    font-weight: bold;
+    grid-area: principal; }
+    main .principal img {
+      margin: 0px;
+      width: 100%;
+      height: 290px; }
+    main .principal h1 {
+      width: 233px;
+      text-align: left;
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: bold;
+      position: absolute;
+      top: 210px;
+      left: 40px; }
+    main .principal button {
+      height: 33px;
+      width: 100px;
+      position: absolute;
+      top: 310px;
+      left: 80px; }
+  main .titulos h4 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Agency FB;
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    top: 260px; }
+  main .promocion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #09A2F9;
+    grid-area: promocion; }
+    main .promocion h2 {
+      font-size: 15px;
+      color: #ffffff;
+      font-family: Agency FB;
+      font-weight: bold; }
+    main .promocion h2, main .promocion button {
+      margin: 5px; }
+  main .equipo {
+    grid-area: equipo;
+    text-align: center;
+    margin: 10px;
+    color: #ffffff; }
+    main .equipo h2 {
+      margin: 10px;
+      font-size: 24px;
+      font-family: Agency FB;
+      font-weight: bold; }
+    main .equipo img {
+      height: 400px;
+      width: 290px;
+      margin: 10px;
+      justify-content: center; }
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  font-family: Agency FB;
+  font-weight: bold; }
+  footer img {
+    margin: 0%;
+    height: 97px;
+    width: 107px; }
+  footer h3 {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #09A2F9; }
+  footer .primero div, footer .primero p {
+    display: inline-block;
+    margin: 10px;
+    width: 250px;
+    height: 100%; }
+  footer ol li {
+    list-style: none;
+    font-weight: bold; }
+    footer ol li a {
+      margin: 2px;
+      text-decoration: none;
+      color: #ffffff; }
+    footer ol li a:hover {
+      color: #FFE400; }
+  footer form {
+    text-align: left;
+    font-family: Agency FB;
+    font-weight: bold;
+    margin: 5px; }
+    footer form input {
+      background: #707070;
+      font-size: 20px;
+      width: 245px;
+      height: 56px;
+      margin-top: 10px;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      border: none; }
+    footer form input::-webkit-input-placeholder {
+      color: #ffffff; }
+    footer form button {
+      margin: 5px 0;
+      height: 54px;
+      width: 157px;
+      background-color: #09A2F9;
+      color: #ffffff;
+      font-family: Agency FB;
+      font-size: 20px;
+      border: none;
+      border-radius: 4px; }
+  footer .segundo div, footer .segundo p {
+    display: inline-block;
+    margin: 5px;
+    width: 300px; }
+  footer .segundo i {
+    margin: 5px;
+    color: #ffffff; }
+
+/*MediaQueries*/
+@media (max-width: 992px) and (min-width: 576px) {
+  main .equipo img {
+    height: 300px;
+    width: 190px;
+    margin: 10px;
+    justify-content: center; }
+  footer img {
+    margin: 0%;
+    height: 70px;
+    width: 107px; }
+  footer .primero div, footer .primero p {
+    width: 180px;
+    height: 100%; }
+  footer p {
+    font-size: 12px; }
+  footer input {
+    font-size: 16px;
+    width: 180px;
+    height: 46px; }
+  footer button {
+    height: 46px;
+    width: 157px;
+    font-size: 18px; }
+  footer .segundo div, footer .segundo p {
+    display: inline;
+    margin: 15px;
+    width: 100%; } }
+
+@media screen and (min-width: 993px) {
+  header {
+    font-size: 24px; }
+    header nav ul li a {
+      margin: 20px; }
+    header .boton button {
+      height: 50px;
+      width: 238px;
+      font-size: 24px; }
+  main .principal img {
+    margin: 0px;
+    width: 100%;
+    height: 690px; }
+  main .promocion {
+    width: 100%;
+    height: 81px; }
+    main .promocion h2 {
+      font-size: 38px; }
+    main .promocion h2, main .promocion button {
+      margin: 10px; }
+  main .titulos h4 {
+    font-size: 75px;
+    position: absolute;
+    top: 560px; }
+  main .titulo h4 {
+    margin: 20px;
+    font-family: Agency FB;
+    font-size: 55px; }
+  main .equipo h2 {
+    margin: 20px;
+    font-size: 48px; }
+  main .equipo img {
+    width: 316px; }
+  footer .primero div, footer .primero p {
+    width: 350px;
+    height: 100%; }
+  footer img {
+    margin: 0%;
+    height: 60px;
+    width: 107px; }
+  footer input {
+    font-size: 18px;
+    width: 280px;
+    height: 56px; }
+  footer .segundo div, footer .segundo p {
+    display: inline;
+    margin: 20px 30px; } }
