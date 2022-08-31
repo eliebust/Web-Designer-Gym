@@ -1,4 +1,9 @@
 @import "utilities/variables";
+@import "utilities/base/map";
+@import "utilities/base/listas";
+@import "utilities/base/mixin";
+@import "utilities/base/extend";
+
 
 * {
     margin: 0;
@@ -10,20 +15,20 @@
 header {
     font-size: 10px;
     font-family: Agency FB;
-    background-color: $color-principal;
+    background-color: $color-principal; //llamado desde variables
     img{
         display: flex;
         width: 100%;
-        height: 60px;
+        height: 40px;
     }
     nav ul{
-        display: flex;
+        @extend %flex; //llamado desde extend
         column-gap: 5px;
         font-weight: bold;
         li{
             a{
                 text-decoration: none;
-                color: $color-texto;
+                color: nth($colores, 2); //llamado desde listas
             }
             a:hover{
                 color: $color-boton;
@@ -34,22 +39,10 @@ header {
 
 .boton{
     button{
-    height: 33px;
-    width: 100px;
-    background-color: $color-boton;
-    color: $color-texto;
-    font-family: Agency FB;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    border-radius: 2px;
-    align-items: center;
+        @include boton; //llamado de mixin sin parametros
     }
     button:hover{
-        background-color: $color-principal;
-        color: $color-boton;
-        border: 3px solid $color-boton;
-        border-radius: 2px;
+        @include boton-hover; //llamado de mixin sin parametros
     }
 }
 
@@ -74,19 +67,19 @@ main{
         font-family: Agency FB;
         font-weight: bold;
         grid-area: principal;
+        position: relative;
         img{
             margin: 0px;
-            width: 100%;
-            height: 290px;
+            @include medidas(100%, 250px); //llamado desde mixin
         }
         h1{
             width: 233px;
             text-align: left;
-            color: $color-texto;
+            color: nth($colores, 2); //llamado desde listas
             font-size: 26px;
             font-weight: bold;
             position: absolute;
-            top: 210px;
+            top: 80px;
             left: 40px;
         }
         button{
@@ -101,30 +94,28 @@ main{
     .titulos h4{
         width: 100%;
         text-align: center;
-        color: $color-texto;
+        color: nth($colores, 2); //llamado desde listas
         font-family: Agency FB;
         font-weight: bold;
         font-size: 35px;
         position: absolute;
-        top: 260px;
+        top: 140px;
     }
 
     .promocion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex; //llamado desde extend
         width: 100%;
         height: 50px;
-        background-color: $color-principal;
+        background-color: $color-principal; //llamado desde variables
         grid-area: promocion;
+        h2, button{
+            margin: 10px;
+        }
         h2{
             font-size: 15px;
-            color: $color-texto;
+            color: nth($colores, 2); //llamado desde listas
             font-family: Agency FB;
             font-weight: bold;
-        }
-        h2, button{
-            margin: 5px;
         }
     }
 
@@ -132,7 +123,7 @@ main{
         grid-area: equipo;
         text-align: center;
         margin: 10px;
-        color: $color-texto;
+        color: nth($colores, 2); //llamado desde listas
         h2{
             margin: 10px;
             font-size: 24px;
@@ -140,8 +131,7 @@ main{
             font-weight: bold;
         }
         img{
-            height: 400px;
-            width: 290px;
+            @include medidas(290px, 400px); //llamado desde mixin
             margin: 10px;
             justify-content: center;
         }
@@ -150,18 +140,19 @@ main{
 
 footer{
     text-align: center;
-    color: $color-texto;
+    color: nth($colores, 2); //llamado desde listas
     font-family: Agency FB;
     font-weight: bold;
     img{
         margin: 0%;
-        height: 97px;
-        width: 107px;
+        width: 150px;
+        height: 47px;
     }
     h3{
         margin: 10px 0;
+        font-weight: bold;
         text-decoration: none;
-        color: $color-principal;
+        color: $color-principal; //llamado desde variables
     }
     .primero div, .primero p{
         display: inline-block;
@@ -175,11 +166,11 @@ footer{
             font-weight: bold;
             a{
                 margin: 2px;
-            text-decoration: none;
-            color: $color-texto;
+                text-decoration: none;
+                color: nth($colores, 2); //llamado desde listas
             }
             a:hover{
-                color: $color-boton;
+                color: $color-boton; //llamado desde variables
             }
         }
     }
@@ -189,7 +180,7 @@ footer{
         font-weight: bold;
         margin: 5px;
         input{
-            background: #707070;
+            background: nth($colores, 4); //llamado desde listas;
             font-size: 20px;
             width: 245px;
             height: 56px;
@@ -199,14 +190,14 @@ footer{
             border: none;
         }
         input::-webkit-input-placeholder{
-            color: $color-texto;
+            color: $color-texto; //llamado desde variables
         }
         button{
             margin: 5px 0;
             height: 54px;
             width: 157px;
-            background-color: $color-principal;
-            color: $color-texto;
+            background-color: $color-principal; //llamado desde variables
+            color: nth($colores, 2); //llamado desde listas
             font-family: Agency FB;
             font-size: 20px;
             border: none;
@@ -220,17 +211,15 @@ footer{
     }
     .segundo i{
         margin: 5px;
-        color: $color-texto;
+        color: nth($colores, 2); //llamado desde listas
     }
 }
 
 /*MediaQueries*/
 @media (max-width: 992px) and (min-width: 576px)  {
-
     main{
         .equipo img{
-            height: 300px;
-            width: 190px;
+            @include medidas(190px, 300px); //llamado desde mixin
             margin: 10px;
             justify-content: center;
         }
@@ -238,8 +227,8 @@ footer{
     footer{
         img{
             margin: 0%;
-            height: 70px;
-            width: 107px;
+            height: 60px;
+            width: 150px;
         }
         .primero div, .primero p{
             width: 180px;
@@ -270,6 +259,10 @@ footer{
 
     header{
         font-size: 24px;
+        img{
+            width: 100%;
+            height: 60px;
+        }
         nav {
             ul{
                 li{
@@ -281,8 +274,7 @@ footer{
         }
         .boton{
             button{
-                height: 50px;
-                width: 238px;
+                @include medidas(238px, 50px); //llamado desde mixin
                 font-size: 24px;
             }
         }
@@ -300,10 +292,13 @@ footer{
             width: 100%;
             height: 81px;
             h2{
-                font-size: 38px;
+                font-size: 48px;
             }
             h2, button{
                 margin: 10px;
+            }
+            button{
+                @include boton2; //llamado de mixin sin parametros
             }
         }
         .titulos h4{
@@ -334,8 +329,7 @@ footer{
         }
         img{
             margin: 0%;
-            height: 60px;
-            width: 107px;
+            @include medidas(180px, 60px); //llamado desde mixin
         }
         input{
             font-size: 18px;

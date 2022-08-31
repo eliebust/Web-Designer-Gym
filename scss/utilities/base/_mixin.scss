@@ -1,0 +1,36 @@
+@import "utilities/variables";
+
+//mixin con parametros
+
+@mixin medidas ($windth, $height) {
+    width: $windth;
+    height: $height;
+}
+
+//mixin sin parametros
+
+@mixin boton {
+    height: 33px;
+    width: 100px;
+    background-color: $color-boton;
+    color: nth($colores, 2); //llamado desde listas
+    font-family: Agency FB;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    align-items: center;
+}
+
+@mixin boton-hover {
+    background-color: $color-principal;
+    color: $color-boton;
+    border: 3px solid $color-boton;
+    border-radius: 2px;
+}
+
+@mixin boton2 {
+    height: 50px;
+    width: 237px;
+    font-size: 24px;
+}

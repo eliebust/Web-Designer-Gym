@@ -21,14 +21,13 @@ header{
 
 header img{
     display: flex;
-    width: 100px;
-    height: 60px;
+    width: 100%;
+    height: 47px;
 }
 
 header nav ul{
     display: flex;
     column-gap: 5px;
-    /*align-items: center;*/
     font-weight: bold;
 }
 
@@ -85,12 +84,13 @@ main{
     font-family: Agency FB;
     font-weight: bold;
     grid-area: principal;
+    position: relative;
 }
 
 .principal img{
     margin: 0px;
     width: 100%;
-    height: 290px;
+    height: 250px;
 }
 
 .principal h1{
@@ -100,7 +100,7 @@ main{
     font-size: 26px;
     font-weight: bold;
     position: absolute;
-    top: 210px;
+    top: 70px;
     left: 40px;
 }
 
@@ -112,14 +112,14 @@ main{
     font-weight: bold;
     font-size: 35px;
     position: absolute;
-    top: 260px;
+    top: 160px;
 }
 
 .principal button{
-    height: 33px;
-    width: 100px;
+    height: 34px;
+    width: 108px;
     position: absolute;
-    top: 310px;
+    top: 180px;
     left: 80px;
 }
 
@@ -159,12 +159,13 @@ main{
     align-items: center;
     width: 100%;
     grid-area: promocion2;
+    position: relative;
 }
 
 .promocion2 img{
     margin: 0px;
     width: 100%;
-    height: 301px;
+    height: 270px;
 }
 
 .promocion2 h1{
@@ -175,7 +176,7 @@ main{
     font-weight: bold;
     font-size: 25px;
     position: absolute;
-    top: 560px;
+    top: 100px;
     left: 40px;
 }
 
@@ -187,7 +188,7 @@ main{
     font-weight: bold;
     font-size: 20px;
     position: absolute;
-    top: 630px;
+    top: 170px;
     left: 80px;
 }
 
@@ -195,8 +196,8 @@ main{
     height: 34px;
     width: 108px;
     position: absolute;
-    top: 660px;
-    left: 100px;
+    top: 210px;
+    left: 80px;
 }
 
 .equipo{
@@ -253,6 +254,12 @@ main{
     font-size: 24px;
     border: none;
     border-radius: 4px;
+}
+
+.row{
+    margin-top: 0px!important;
+    margin-right: 0px!important;
+    margin-left: 0px!important;
 }
 
 .clase{
@@ -316,14 +323,15 @@ footer{
 
 footer img{
     margin: 0%;
-    height: 97px;
-    width: 107px;
+    width: 150px;
+    height: 47px;
 }
 
 footer h3{
     margin: 10px 0;
     text-decoration: none;
     color: #09A2F9;
+    font-weight: bold;
 }
 
 footer .primero div, .primero p{
@@ -342,6 +350,10 @@ footer ol li a{
     margin: 2px;
     text-decoration: none;
     color: white;
+}
+
+footer ol li a:hover{
+    color: #FFE400;
 }
 
 footer form{
@@ -435,8 +447,8 @@ footer .segundo i{
 
     footer img{
         margin: 0%;
-        height: 70px;
-        width: 107px;
+        height: 60px;
+        width: 150px;
     }
 
     footer .primero div, .primero p{
@@ -473,6 +485,11 @@ footer .segundo i{
         font-size: 24px;
     }
 
+    header img{
+        width: 100%;
+        height: 60px;
+    }
+
     header nav ul li a{
         margin: 20px;
     }
@@ -495,7 +512,7 @@ footer .segundo i{
         width: 757px;
         font-size: 80px;
         position: absolute;
-        top: 340px;
+        top: 200px;
         left: 100px;
     }
 
@@ -511,7 +528,7 @@ footer .segundo i{
 
     .principal button{
         position: absolute;
-        top: 650px;
+        top: 550px;
         left: 400px;
     }
 
@@ -537,7 +554,7 @@ footer .segundo i{
         width: 420px;
         font-size: 74px;
         position: absolute;
-        top: 1000px;
+        top: 100px;
         left: 100px;
     }
 
@@ -547,18 +564,17 @@ footer .segundo i{
         color: #09A2F9;
         font-size: 80px;
         position: absolute;
-        top: 1280px;
+        top: 380px;
         left: 200px;
     }
 
     .promocion2 button{
         position: absolute;
-        top: 1410px;
-        left: 320px;
+        top: 510px;
+        left: 400px;
     }
 
     .titulo h4{
-        margin: 20px;
         font-family: Agency FB;
         font-size: 55px;
     }
@@ -598,8 +614,8 @@ footer .segundo i{
 
     footer img{
         margin: 0%;
+        width: 180px;
         height: 60px;
-        width: 107px;
     }
 
     footer input{

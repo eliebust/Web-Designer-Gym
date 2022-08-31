@@ -1,3 +1,8 @@
+header nav ul, main .promocion {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +15,13 @@ header {
   header img {
     display: flex;
     width: 100%;
-    height: 60px; }
+    height: 40px; }
   header nav ul {
-    display: flex;
     column-gap: 5px;
     font-weight: bold; }
     header nav ul li a {
       text-decoration: none;
-      color: #ffffff; }
+      color: #FFFFFF; }
     header nav ul li a:hover {
       color: #FFE400; }
 
@@ -25,7 +29,7 @@ header {
   height: 33px;
   width: 100px;
   background-color: #FFE400;
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Agency FB;
   font-size: 14px;
   font-weight: bold;
@@ -50,19 +54,20 @@ main {
     width: 100%;
     font-family: Agency FB;
     font-weight: bold;
-    grid-area: principal; }
+    grid-area: principal;
+    position: relative; }
     main .principal img {
       margin: 0px;
       width: 100%;
-      height: 290px; }
+      height: 250px; }
     main .principal h1 {
       width: 233px;
       text-align: left;
-      color: #ffffff;
+      color: #FFFFFF;
       font-size: 26px;
       font-weight: bold;
       position: absolute;
-      top: 210px;
+      top: 80px;
       left: 40px; }
     main .principal button {
       height: 33px;
@@ -73,54 +78,52 @@ main {
   main .titulos h4 {
     width: 100%;
     text-align: center;
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: Agency FB;
     font-weight: bold;
     font-size: 35px;
     position: absolute;
-    top: 260px; }
+    top: 140px; }
   main .promocion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 50px;
     background-color: #09A2F9;
     grid-area: promocion; }
+    main .promocion h2, main .promocion button {
+      margin: 10px; }
     main .promocion h2 {
       font-size: 15px;
-      color: #ffffff;
+      color: #FFFFFF;
       font-family: Agency FB;
       font-weight: bold; }
-    main .promocion h2, main .promocion button {
-      margin: 5px; }
   main .equipo {
     grid-area: equipo;
     text-align: center;
     margin: 10px;
-    color: #ffffff; }
+    color: #FFFFFF; }
     main .equipo h2 {
       margin: 10px;
       font-size: 24px;
       font-family: Agency FB;
       font-weight: bold; }
     main .equipo img {
-      height: 400px;
       width: 290px;
+      height: 400px;
       margin: 10px;
       justify-content: center; }
 
 footer {
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: Agency FB;
   font-weight: bold; }
   footer img {
     margin: 0%;
-    height: 97px;
-    width: 107px; }
+    width: 150px;
+    height: 47px; }
   footer h3 {
     margin: 10px 0;
+    font-weight: bold;
     text-decoration: none;
     color: #09A2F9; }
   footer .primero div, footer .primero p {
@@ -134,7 +137,7 @@ footer {
     footer ol li a {
       margin: 2px;
       text-decoration: none;
-      color: #ffffff; }
+      color: #FFFFFF; }
     footer ol li a:hover {
       color: #FFE400; }
   footer form {
@@ -158,7 +161,7 @@ footer {
       height: 54px;
       width: 157px;
       background-color: #09A2F9;
-      color: #ffffff;
+      color: #FFFFFF;
       font-family: Agency FB;
       font-size: 20px;
       border: none;
@@ -169,19 +172,19 @@ footer {
     width: 300px; }
   footer .segundo i {
     margin: 5px;
-    color: #ffffff; }
+    color: #FFFFFF; }
 
 /*MediaQueries*/
 @media (max-width: 992px) and (min-width: 576px) {
   main .equipo img {
-    height: 300px;
     width: 190px;
+    height: 300px;
     margin: 10px;
     justify-content: center; }
   footer img {
     margin: 0%;
-    height: 70px;
-    width: 107px; }
+    height: 60px;
+    width: 150px; }
   footer .primero div, footer .primero p {
     width: 180px;
     height: 100%; }
@@ -203,11 +206,14 @@ footer {
 @media screen and (min-width: 993px) {
   header {
     font-size: 24px; }
+    header img {
+      width: 100%;
+      height: 60px; }
     header nav ul li a {
       margin: 20px; }
     header .boton button {
-      height: 50px;
       width: 238px;
+      height: 50px;
       font-size: 24px; }
   main .principal img {
     margin: 0px;
@@ -217,9 +223,13 @@ footer {
     width: 100%;
     height: 81px; }
     main .promocion h2 {
-      font-size: 38px; }
+      font-size: 48px; }
     main .promocion h2, main .promocion button {
       margin: 10px; }
+    main .promocion button {
+      height: 50px;
+      width: 237px;
+      font-size: 24px; }
   main .titulos h4 {
     font-size: 75px;
     position: absolute;
@@ -238,8 +248,8 @@ footer {
     height: 100%; }
   footer img {
     margin: 0%;
-    height: 60px;
-    width: 107px; }
+    width: 180px;
+    height: 60px; }
   footer input {
     font-size: 18px;
     width: 280px;
