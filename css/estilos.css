@@ -42,11 +42,11 @@ header nav ul li a:hover{
 
 .boton button{
     height: 33px;
-    width: 100px;
+    width: 120px;
     background-color: #FFE400;
     color: white;
     font-family: Agency FB;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     border: none;
     border-radius: 2px;
@@ -58,6 +58,7 @@ header nav ul li a:hover{
     color: #FFE400;
     border: 3px solid #FFE400;
     border-radius: 2px;
+    font-size: 12px;
 }
 
 /*Propiedades del Padre*/
@@ -97,10 +98,10 @@ main{
     width: 233px;
     text-align: left;
     color: white;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 40px;
 }
 
@@ -134,23 +135,24 @@ main{
 }
 
 .promocion h2{
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
     font-family: Agency FB;
     font-weight: bold;
 }
 
 .titulo h4{
+    margin: 15px 0px;
     width: 100%;
     text-align: center;
     color: white;
     font-family: Agency FB;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .promocion h2, button{
-    margin: 12px;
+    margin: 5px;
 }
 
 .promocion2{
@@ -174,9 +176,9 @@ main{
     color: white;
     font-family: Agency FB;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 40px;
 }
 
@@ -228,24 +230,21 @@ main{
     margin: 0px;
 }
 
-.card h3{
-    font-size: 35px;
-}
 .card h5{
-    font-size: 35px;
+    font-size: 30px;
     margin: 0px;
 }
 
 #precio p{
     margin: 0%;
     color: #09A2F9;
-    font-size: 70px;
+    font-size: 50px;
     font-family: Agency FB;
     font-weight: bold;
 }
 
 .card button{
-    margin: 10px;
+    margin: 5px;
     height: 54px;
     width: 138px;
     background-color: #09A2F9;
@@ -315,10 +314,16 @@ main{
 }
 
 footer{
+    margin-top: 10px;
     text-align: center;
     color: white;
     font-family: Agency FB;
     font-weight: bold;
+}
+
+footer p{
+    margin: 0px;
+    font-size: 12px;
 }
 
 footer img{
@@ -328,10 +333,11 @@ footer img{
 }
 
 footer h3{
-    margin: 10px 0;
+    margin: 5px 0;
     text-decoration: none;
     color: #09A2F9;
     font-weight: bold;
+    font-size: 16px;
 }
 
 footer .primero div, .primero p{
@@ -339,6 +345,10 @@ footer .primero div, .primero p{
     margin: 10px;
     width: 250px;
     height: 100%;
+}
+
+footer ol{
+    padding-left: 0px !important;
 }
 
 footer ol li{
@@ -350,6 +360,7 @@ footer ol li a{
     margin: 2px;
     text-decoration: none;
     color: white;
+    font-size: 12px;
 }
 
 footer ol li a:hover{
@@ -365,12 +376,12 @@ footer form{
 
 footer input{
     background: #707070;
-    font-size: 20px;
+    font-size: 14px;
     width: 245px;
-    height: 56px;
+    height: 46px;
     margin-top: 10px;
     padding-left: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none;
 }
 
@@ -380,12 +391,12 @@ input::-webkit-input-placeholder{
 
 footer button{
     margin: 5px 0;
-    height: 54px;
+    height: 46px;
     width: 157px;
     background-color: #09A2F9;
     color: white;
     font-family: Agency FB;
-    font-size: 20px;
+    font-size: 14px;
     border: none;
     border-radius: 4px;
 }
@@ -403,6 +414,10 @@ footer .segundo i{
 
 /*MediaQueries*/
 @media (max-width: 992px) and (min-width: 576px)  {
+    .promocion h2{
+        font-size: 25px;
+    }
+
     .equipo img{
         height: 300px;
         width: 190px;
@@ -421,19 +436,14 @@ footer .segundo i{
         width: 200px;
     }
 
-    .card h3{
-        font-size: 35px;
-        padding: 10px;
-    }
-
     .card h5{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #precio p{
         margin: 0%;
         color: #09A2F9;
-        font-size: 50px;
+        font-size: 35px;
         font-family: Agency FB;
         font-weight: bold;
     }
@@ -445,14 +455,22 @@ footer .segundo i{
         font-size: 18px;
     }
 
+    .clase{
+        text-align: center;
+    }
+
+    .clase img{
+        width: 90%;
+    }
+
     footer img{
-        margin: 0%;
-        height: 60px;
+        margin: 4%;
+        height: 50px;
         width: 150px;
     }
 
     footer .primero div, .primero p{
-        width: 180px;
+        width: 170px;
         height: 100%;
     }
 
@@ -469,7 +487,7 @@ footer .segundo i{
     footer button{
         height: 46px;
         width: 157px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     footer .segundo div, .segundo p{
@@ -505,7 +523,7 @@ footer .segundo i{
 
     .principal img{
         width: 100%;
-        height: 700px;
+        height: 655px;
     }
 
     .principal h1{
@@ -523,7 +541,7 @@ footer .segundo i{
         font-family: Agency FB;
         font-size: 75px;
         position: absolute;
-        top: 560px;
+        top: 460px;
     }
 
     .principal button{
@@ -603,25 +621,48 @@ footer .segundo i{
         width: 645px;
     }
 
+    .clase{
+        text-align: center;
+    }
+
+    .clase img{
+        width: 70%;
+    }
+
     footer{
         text-align: center;
     }
 
     footer .primero div, .primero p{
-        width: 350px;
+        width: 300px;
         height: 100%;
     }
 
     footer img{
         margin: 0%;
-        width: 180px;
-        height: 60px;
+        width: 150px;
+        height: 50px;
+    }
+
+    footer h3 {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #09A2F9;
     }
 
     footer input{
         font-size: 18px;
         width: 280px;
-        height: 56px;
+        height: 46px;
+    }
+
+    footer button{
+        margin: 0px;
+        height: 46px;
+        width: 157px;
+        font-size: 20px;
     }
 
     footer .segundo div, .segundo p{

@@ -108,11 +108,12 @@ main{
         height: 50px;
         background-color: $color-principal; //llamado desde variables
         grid-area: promocion;
+        align-items: center;
         h2, button{
-            margin: 10px;
+            margin: 5px;
         }
         h2{
-            font-size: 15px;
+            font-size: 13px;
             color: nth($colores, 2); //llamado desde listas
             font-family: Agency FB;
             font-weight: bold;
@@ -148,11 +149,16 @@ footer{
         width: 150px;
         height: 47px;
     }
+    p{
+        margin: 0px;
+        font-size: 12px;
+    }
     h3{
-        margin: 10px 0;
+        margin: 5px 0;
         font-weight: bold;
         text-decoration: none;
         color: $color-principal; //llamado desde variables
+        font-size: 16px;
     }
     .primero div, .primero p{
         display: inline-block;
@@ -161,6 +167,7 @@ footer{
         height: 100%;
     }
     ol{
+        padding-left: 0px !important;
         li{
             list-style: none;
             font-weight: bold;
@@ -168,6 +175,7 @@ footer{
                 margin: 2px;
                 text-decoration: none;
                 color: nth($colores, 2); //llamado desde listas
+                font-size: 12px;
             }
             a:hover{
                 color: $color-boton; //llamado desde variables
@@ -181,9 +189,9 @@ footer{
         margin: 5px;
         input{
             background: nth($colores, 4); //llamado desde listas;
-            font-size: 20px;
+            font-size: 14px;
             width: 245px;
-            height: 56px;
+            height: 46px;
             margin-top: 10px;
             padding-left: 10px;
             margin-bottom: 20px;
@@ -194,12 +202,12 @@ footer{
         }
         button{
             margin: 5px 0;
-            height: 54px;
+            height: 46px;
             width: 157px;
             background-color: $color-principal; //llamado desde variables
             color: nth($colores, 2); //llamado desde listas
             font-family: Agency FB;
-            font-size: 20px;
+            font-size: 14px;
             border: none;
             border-radius: 4px;
         }
@@ -218,34 +226,48 @@ footer{
 /*MediaQueries*/
 @media (max-width: 992px) and (min-width: 576px)  {
     main{
+        .promocion{
+            h2{
+                font-size: 25px;
+            }
+        }
         .equipo img{
-            @include medidas(190px, 300px); //llamado desde mixin
-            margin: 10px;
+            @include medidas(170px, 250px); //llamado desde mixin
+            margin: 5px;
             justify-content: center;
         }
     }
     footer{
         img{
-            margin: 0%;
-            height: 60px;
+            margin: 4%;
+            height: 50px;
             width: 150px;
         }
         .primero div, .primero p{
-            width: 180px;
-            height: 100%;
+            @include medidas(190px, 100%); //llamado desde mixin
+            margin: 0px;
+        }
+        h3{
+            margin: 0px;
         }
         p{
             font-size: 12px;
         }
-        input{
-            font-size: 16px;
-            width: 180px;
-            height: 46px;
-        }
-        button{
-            height: 46px;
-            width: 157px;
-            font-size: 18px;
+        form{
+            input{
+                font-size: 20px;
+                width: 180px;
+                height: 46px;
+            }
+            input::-webkit-input-placeholder{
+                color: $color-texto; //llamado desde variables
+            }
+            button{
+                margin: 0px;
+                height: 46px;
+                width: 157px;
+                font-size: 16px;
+            }
         }
         .segundo div, .segundo p{
             display: inline;
@@ -285,7 +307,7 @@ footer{
             img{
                 margin: 0px;
                 width: 100%;
-                height: 690px;
+                height: 655px;
             }
         }
         .promocion{
@@ -304,7 +326,7 @@ footer{
         .titulos h4{
             font-size: 75px;
             position: absolute;
-            top: 560px;
+            top: 460px;
         }
         .titulo h4{
             margin: 20px;
@@ -324,17 +346,33 @@ footer{
 
     footer{
         .primero div, .primero p{
-            width: 350px;
-            height: 100%;
+            @include medidas(300px, 100%); //llamado desde mixin
+            justify-content: center;
         }
         img{
             margin: 0%;
-            @include medidas(180px, 60px); //llamado desde mixin
+            @include medidas(150px, 50px); //llamado desde mixin
         }
-        input{
+        h3{
+            margin: 10px 0;
             font-size: 18px;
-            width: 280px;
-            height: 56px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #09A2F9;
+        }
+        form{
+            input{
+                font-size: 18px;
+                @include medidas(280px, 46px); //llamado desde mixin
+            }
+            input::-webkit-input-placeholder{
+                color: $color-texto; //llamado desde variables
+            }
+            button{
+                margin: 0px;
+                @include medidas(157px, 46px); //llamado desde mixin
+                font-size: 20px;
+            }
         }
         .segundo div, .segundo p{
             display: inline;

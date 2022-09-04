@@ -1,7 +1,6 @@
 header nav ul, main .promocion {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
 
 * {
   margin: 0;
@@ -27,11 +26,11 @@ header {
 
 .boton button {
   height: 33px;
-  width: 100px;
+  width: 120px;
   background-color: #FFE400;
   color: #FFFFFF;
   font-family: Agency FB;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   border: none;
   border-radius: 2px;
@@ -41,7 +40,8 @@ header {
   background-color: #09A2F9;
   color: #FFE400;
   border: 3px solid #FFE400;
-  border-radius: 2px; }
+  border-radius: 2px;
+  font-size: 12px; }
 
 main {
   display: grid;
@@ -88,11 +88,12 @@ main {
     width: 100%;
     height: 50px;
     background-color: #09A2F9;
-    grid-area: promocion; }
+    grid-area: promocion;
+    align-items: center; }
     main .promocion h2, main .promocion button {
-      margin: 10px; }
+      margin: 5px; }
     main .promocion h2 {
-      font-size: 15px;
+      font-size: 13px;
       color: #FFFFFF;
       font-family: Agency FB;
       font-weight: bold; }
@@ -121,25 +122,32 @@ footer {
     margin: 0%;
     width: 150px;
     height: 47px; }
+  footer p {
+    margin: 0px;
+    font-size: 12px; }
   footer h3 {
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: bold;
     text-decoration: none;
-    color: #09A2F9; }
+    color: #09A2F9;
+    font-size: 16px; }
   footer .primero div, footer .primero p {
     display: inline-block;
     margin: 10px;
     width: 250px;
     height: 100%; }
-  footer ol li {
-    list-style: none;
-    font-weight: bold; }
-    footer ol li a {
-      margin: 2px;
-      text-decoration: none;
-      color: #FFFFFF; }
-    footer ol li a:hover {
-      color: #FFE400; }
+  footer ol {
+    padding-left: 0px !important; }
+    footer ol li {
+      list-style: none;
+      font-weight: bold; }
+      footer ol li a {
+        margin: 2px;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 12px; }
+      footer ol li a:hover {
+        color: #FFE400; }
   footer form {
     text-align: left;
     font-family: Agency FB;
@@ -147,9 +155,9 @@ footer {
     margin: 5px; }
     footer form input {
       background: #707070;
-      font-size: 20px;
+      font-size: 14px;
       width: 245px;
-      height: 56px;
+      height: 46px;
       margin-top: 10px;
       padding-left: 10px;
       margin-bottom: 20px;
@@ -158,12 +166,12 @@ footer {
       color: #ffffff; }
     footer form button {
       margin: 5px 0;
-      height: 54px;
+      height: 46px;
       width: 157px;
       background-color: #09A2F9;
       color: #FFFFFF;
       font-family: Agency FB;
-      font-size: 20px;
+      font-size: 14px;
       border: none;
       border-radius: 4px; }
   footer .segundo div, footer .segundo p {
@@ -176,28 +184,36 @@ footer {
 
 /*MediaQueries*/
 @media (max-width: 992px) and (min-width: 576px) {
+  main .promocion h2 {
+    font-size: 25px; }
   main .equipo img {
-    width: 190px;
-    height: 300px;
-    margin: 10px;
+    width: 170px;
+    height: 250px;
+    margin: 5px;
     justify-content: center; }
   footer img {
-    margin: 0%;
-    height: 60px;
+    margin: 4%;
+    height: 50px;
     width: 150px; }
   footer .primero div, footer .primero p {
-    width: 180px;
-    height: 100%; }
+    width: 190px;
+    height: 100%;
+    margin: 0px; }
+  footer h3 {
+    margin: 0px; }
   footer p {
     font-size: 12px; }
-  footer input {
-    font-size: 16px;
+  footer form input {
+    font-size: 20px;
     width: 180px;
     height: 46px; }
-  footer button {
+  footer form input::-webkit-input-placeholder {
+    color: #ffffff; }
+  footer form button {
+    margin: 0px;
     height: 46px;
     width: 157px;
-    font-size: 18px; }
+    font-size: 16px; }
   footer .segundo div, footer .segundo p {
     display: inline;
     margin: 15px;
@@ -218,7 +234,7 @@ footer {
   main .principal img {
     margin: 0px;
     width: 100%;
-    height: 690px; }
+    height: 655px; }
   main .promocion {
     width: 100%;
     height: 81px; }
@@ -229,11 +245,11 @@ footer {
     main .promocion button {
       height: 50px;
       width: 237px;
-      font-size: 24px; }
+      font-size: 22px; }
   main .titulos h4 {
     font-size: 75px;
     position: absolute;
-    top: 560px; }
+    top: 460px; }
   main .titulo h4 {
     margin: 20px;
     font-family: Agency FB;
@@ -244,16 +260,30 @@ footer {
   main .equipo img {
     width: 316px; }
   footer .primero div, footer .primero p {
-    width: 350px;
-    height: 100%; }
+    width: 300px;
+    height: 100%;
+    justify-content: center; }
   footer img {
     margin: 0%;
-    width: 180px;
-    height: 60px; }
-  footer input {
+    width: 150px;
+    height: 50px; }
+  footer h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #09A2F9; }
+  footer form input {
     font-size: 18px;
     width: 280px;
-    height: 56px; }
+    height: 46px; }
+  footer form input::-webkit-input-placeholder {
+    color: #ffffff; }
+  footer form button {
+    margin: 0px;
+    width: 157px;
+    height: 46px;
+    font-size: 20px; }
   footer .segundo div, footer .segundo p {
     display: inline;
     margin: 20px 30px; } }
