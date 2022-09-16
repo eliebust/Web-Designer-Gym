@@ -47,6 +47,9 @@ header {
   text-decoration: none;
   color: white; }
 
+.boton button a:hover {
+  color: white; }
+
 main {
   display: grid;
   grid-template-columns: auto auto auto;

@@ -66,6 +66,10 @@ button a{
     color: white;
 }
 
+button a:hover{
+    color: white;
+}
+
 /*Propiedades del Padre*/
 main{
     display: grid;
