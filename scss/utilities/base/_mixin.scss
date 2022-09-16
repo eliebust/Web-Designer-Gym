@@ -15,7 +15,7 @@
     background-color: $color-boton;
     color: nth($colores, 2); //llamado desde listas
     font-family: Agency FB;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border: none;
     border-radius: 2px;
@@ -27,7 +27,7 @@
     color: $color-boton;
     border: 3px solid $color-boton;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 @mixin boton2 {

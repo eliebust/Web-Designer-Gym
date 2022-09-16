@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    font-size: 10px;
+    font-size: 16px;
     font-family: Agency FB;
 }
 
@@ -46,7 +46,7 @@ header nav ul li a:hover{
     background-color: #FFE400;
     color: white;
     font-family: Agency FB;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border: none;
     border-radius: 2px;
@@ -58,7 +58,12 @@ header nav ul li a:hover{
     color: #FFE400;
     border: 3px solid #FFE400;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 18px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
 }
 
 /*Propiedades del Padre*/
@@ -95,7 +100,7 @@ main{
 }
 
 .principal h1{
-    width: 233px;
+    width: 200px;
     text-align: left;
     color: white;
     font-size: 24px;
@@ -113,7 +118,7 @@ main{
     font-weight: bold;
     font-size: 35px;
     position: absolute;
-    top: 160px;
+    top: 140px;
 }
 
 .principal button{
@@ -128,14 +133,19 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
     width: 100%;
     height: 50px;
     background-color: #09A2F9;
     grid-area: promocion;
 }
 
+.promocion h2, button{
+    margin: 5px;
+}
+
 .promocion h2{
-    font-size: 13px;
+    font-size: 16px;
     color: #fff;
     font-family: Agency FB;
     font-weight: bold;
@@ -149,10 +159,6 @@ main{
     font-family: Agency FB;
     font-weight: bold;
     font-size: 30px;
-}
-
-.promocion h2, button{
-    margin: 5px;
 }
 
 .promocion2{
@@ -246,19 +252,13 @@ main{
 .card button{
     margin: 5px;
     height: 54px;
-    width: 138px;
+    width: 178px;
     background-color: #09A2F9;
     color: white;
     font-family: Agency FB;
     font-size: 24px;
     border: none;
     border-radius: 4px;
-}
-
-.row{
-    margin-top: 0px!important;
-    margin-right: 0px!important;
-    margin-left: 0px!important;
 }
 
 .clase{
@@ -323,7 +323,7 @@ footer{
 
 footer p{
     margin: 0px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 footer img{
@@ -337,7 +337,7 @@ footer h3{
     text-decoration: none;
     color: #09A2F9;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 footer .primero div, .primero p{
@@ -360,7 +360,7 @@ footer ol li a{
     margin: 2px;
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 footer ol li a:hover{
@@ -376,7 +376,7 @@ footer form{
 
 footer input{
     background: #707070;
-    font-size: 14px;
+    font-size: 16px;
     width: 245px;
     height: 46px;
     margin-top: 10px;
@@ -396,7 +396,7 @@ footer button{
     background-color: #09A2F9;
     color: white;
     font-family: Agency FB;
-    font-size: 14px;
+    font-size: 16px;
     border: none;
     border-radius: 4px;
 }
@@ -547,10 +547,11 @@ footer .segundo i{
     .principal button{
         position: absolute;
         top: 550px;
-        left: 400px;
+        left: 100px;
     }
 
     .promocion{
+        padding: 4rem;
         width: 100%;
         height: 81px;
     }
@@ -633,8 +634,13 @@ footer .segundo i{
         text-align: center;
     }
 
+    footer p{
+        margin: 0px;
+        font-size: 16px;
+    }
+
     footer .primero div, .primero p{
-        width: 300px;
+        width: 350px;
         height: 100%;
     }
 
@@ -646,7 +652,7 @@ footer .segundo i{
 
     footer h3 {
         margin: 10px 0;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         text-decoration: none;
         color: #09A2F9;
@@ -666,8 +672,9 @@ footer .segundo i{
     }
 
     footer .segundo div, .segundo p{
+        padding: 1rem;
         display: inline;
-        margin: 20px 30px;
+        margin: 40px 30px;
     }
 
 }
