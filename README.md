@@ -9,6 +9,3 @@ Propuesta de Diseño y Maquetado Web para un GYM.
 - SASS
 - BOOSTRAP
 
-
-
-
