@@ -8,5 +8,6 @@ Propuesta de Diseño y Maquetado Web para un GYM.
     - GRIDS
 - SASS
 - BOOSTRAP
-- 
-https://github.com/eliebust/Web-Designer-Gym/blob/master/img/Home.png
+
+
+<p align="center"> <img src="https://github.com/eliebust/Web-Designer-Gym/blob/master/img/Home.png" width="1500" heigth="1000"/> </p>
